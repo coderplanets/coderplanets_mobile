@@ -18,7 +18,8 @@
     "expo-font": "~5.0.1",
     "react": "16.8.3",
     "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
-    "react-navigation": "^3.11.0"
+    "react-navigation": "^3.11.0",
+    "styled-components": "^4.3.1"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0",

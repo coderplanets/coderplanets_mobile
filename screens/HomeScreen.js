@@ -1,4 +1,6 @@
 import React from 'react'
+import styled from 'styled-components/native'
+
 import {
   Image,
   Platform,
@@ -19,7 +21,7 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <Wrapper>
         <ScrollView
           style={styles.container}
           contentContainerStyle={styles.contentContainer}
@@ -38,7 +40,7 @@ export default class HomeScreen extends React.Component {
           <View style={styles.getStartedContainer}>
             {this._maybeRenderDevelopmentModeWarning()}
 
-            <Text style={styles.getStartedText}>CPS 客户端</Text>
+            <StyledText>CPS 客户端</StyledText>
 
             <View
               style={[styles.codeHighlightContainer, styles.homeScreenFilename]}
@@ -74,7 +76,7 @@ export default class HomeScreen extends React.Component {
             </MonoText>
           </View>
         </View>
-      </View>
+      </Wrapper>
     )
   }
 
@@ -113,6 +115,15 @@ export default class HomeScreen extends React.Component {
     )
   }
 }
+
+const Wrapper = styled.View`
+  flex: 1;
+  background-color: #fff;
+`
+const StyledText = styled.Text`
+  color: tomato;
+  font-weight: bold;
+`
 
 const styles = StyleSheet.create({
   container: {
