@@ -1,17 +1,6 @@
 import React from 'react'
-import styled from 'styled-components/native'
+import { Text } from 'react-native'
 
-import {
-  Image,
-  Platform,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native'
-import { WebBrowser } from 'expo'
-
-import { MonoText } from '../../components/StyledText'
 import {
   Wrapper,
   StyledText2,

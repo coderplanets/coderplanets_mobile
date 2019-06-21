@@ -11,7 +11,7 @@ export const StyledText2 = styled.Text`
   font-weight: bold;
 `
 
-export const ScrollViewWrapper = styled.ScrollView`
+export const ScrollViewWrapper = styled(ScrollView)`
   flex: 1;
   background-color: #fff;
   padding-top: 30;
