@@ -6,7 +6,8 @@
     "ios": "expo start --ios",
     "eject": "expo eject",
     "test": "node ./node_modules/jest/bin/jest.js --watchAll",
-    "lint": "eslint containers/*"
+    "lint": "eslint containers/*",
+    "lint:staged": "git diff --cached --name-only --diff-filter=ACRM | grep \".js$\" | xargs ./node_modules/.bin/eslint"
   },
   "jest": {
     "preset": "jest-expo"
@@ -23,10 +24,14 @@
     "styled-components": "^4.3.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
     "babel-preset-expo": "^5.0.0",
     "eslint": "^5.16.0",
     "eslint-config-react-native-wcandillon": "^1.2.4",
-    "jest-expo": "^33.0.0"
+    "husky": "^2.4.1",
+    "jest-expo": "^33.0.0",
+    "pretty-quick": "^1.11.1"
   },
   "private": true
 }
