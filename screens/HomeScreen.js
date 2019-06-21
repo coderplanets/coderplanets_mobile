@@ -12,6 +12,8 @@ import {
 } from 'react-native'
 import { WebBrowser } from 'expo'
 
+import CommunityBanner from '../containers/CommunityBanner'
+
 import { MonoText } from '../components/StyledText'
 
 export default class HomeScreen extends React.Component {
@@ -37,19 +39,7 @@ export default class HomeScreen extends React.Component {
             />
           </View>
 
-          <View style={styles.getStartedContainer}>
-            {this._maybeRenderDevelopmentModeWarning()}
-
-            <StyledText>CPS 客户端</StyledText>
-
-            <View
-              style={[styles.codeHighlightContainer, styles.homeScreenFilename]}
-            >
-              <MonoText style={styles.codeHighlightText}>
-                screens/HomeScreen.js
-              </MonoText>
-            </View>
-          </View>
+          <CommunityBanner />
 
           <View style={styles.helpContainer}>
             <TouchableOpacity
