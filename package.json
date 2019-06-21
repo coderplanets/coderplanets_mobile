@@ -23,6 +23,8 @@
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-react-native-wcandillon": "^1.2.4",
     "jest-expo": "^33.0.0"
   },
   "private": true
