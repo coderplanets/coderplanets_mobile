@@ -26,9 +26,9 @@
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
+    "@groupher/eslint-config-rn": "^1.0.0",
     "babel-preset-expo": "^5.0.0",
     "eslint": "^5.16.0",
-    "eslint-config-react-native-wcandillon": "^1.2.4",
     "husky": "^2.4.1",
     "jest-expo": "^33.0.0",
     "pretty-quick": "^1.11.1"
